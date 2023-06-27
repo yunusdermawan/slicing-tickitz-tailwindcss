@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    module.exports = {
+        variants: {
+            extends: {
+                display: ['focus-group']
+            },
+        },
+        plugins: [],
+    }
+  </script>
+</head>
+<body>
+  <header class="mb-3 md:mb-7">
+    <div class="container mx-auto px-10 lg:px-40 pt-7 flex items-center justify-between ">
+        <nav>
+            <div class="md:flex items-center justify-end gap-7">
+                <a href="index.html"><img class="me-7" src="../assets/Vector.png" alt="logo"></a>
+                <div class="hidden md:flex gap-5 ">
+                    <a class="font-medium text-gray-500 ms-8" href="index.html">Home</a>
+                    <a class="font-medium text-gray-500 ms-8" href="" >List Movie</a>
+                </div>
+            </div>
+        </nav>
+        <div class="flex md:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:flex items-center justify-end gap-7">
+            <a href="#"><i class="fas fa-search me-5"></i></a>
+            <button class="hover:group" href="#"><img src="../assets/profile.png" alt="profile"></button>
+            <div class="flex flex-col justify-center bg-gray-100 border-2 border-gray-300 rounded h-36 w-44 absolute top-14 gap-1 focus-group:flex hidden">
+                <span class="hover:bg-gray-500 hover:text-white"><a class="ms-5" href="#">Update Profile</a></span>
+                <span class="hover:bg-gray-500 hover:text-white"><a class="ms-5" href="#">Change Password</a></span>
+                <span class="hover:bg-gray-500 hover:text-white"><a class="ms-5" href="#">Log Out</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="hidden grid-cols-1 divide-y text-center">
+        <div class="pt-5"></div>
+        <div class="py-3 font-medium hover:bg-gray-100"><a href="index.html">Home</a></div>
+        <div class="py-3 font-medium hover:bg-gray-100"><a href="#">List Movie</a></div>
+        <div class="py-3 font-medium hover:bg-gray-100"><a href="#">Sign In</a></div>
+        <div class="pt-7 text-gray-400">&copy; 2020 Tickitz. All rights reserved.</div>
+    </div>
+    <div class="flex md:hidden justify-between px-10 mt-5">
+        <span class="text-md text-gray-400">Total Payment</span>
+        <span class="text-md font-bold">$30.00</span>
+    </div>
+  </header>
+  <main class="bg-gray-100 pb-10">
+    <div class="container mx-auto px-10 lg:px-40 pt-7 flex flex-col md:flex-row gap-7">
+        <div class="w-full md:w-2/3">
+            <div class="hidden md:block pt-7 pb-5 md:drop-shadow-md">
+                <a class="font-medium" href="">Payment Info</a>
+            </div>
+            <section class="hidden md:block bg-white rounded-lg py-10 md:py-7 px-7 md:drop-shadow-md">
+                
+                <span class="">
+                    <div class="flex justify-between border-b-2 pb-4">
+                        <span class="text-sm">Date & Time</span>
+                        <span class="text-sm">Tuesday, 07 July 2020 at 02.00</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 pt-6 pb-4">
+                        <span class="text-sm">Movie title</span>
+                        <span class="text-sm">Spider-Man: Homecoming</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 pt-6 pb-4">
+                        <span class="text-sm">Cinema Name</span>
+                        <span class="text-sm">CineOne21 Cinema</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 pt-6 pb-4">
+                        <span class="text-sm">Number of tickets</span>
+                        <span class="text-sm">3 pieces</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 pt-6 pb-4">
+                        <span class="text-sm">Total payment</span>
+                        <span class="text-sm font-bold">$30.00</span>
+                    </div>
+                </span>
+            </section>
+            <div>
+                <div class="hidden md:block pt-7 pb-5 md:drop-shadow-md">
+                    <a class="font-medium" href="">Choose a Payment Method</a>
+                </div>
+                <div class="bg-white rounded-lg py-10 md:py-7 px-5 md:drop-shadow-md">
+                    <div>
+                        <div class="grid grid-cols-3 md:grid-cols-4 border-b-2 pb-5">
+                            <div class="border-2 rounded w-20 h-8 m-2 p-4 flex justify-center items-center">
+                                <img class="object-cover" src="../assets/pay-bca.png" alt="">
+                            </div>
+                            <div class="border-2 rounded w-20 h-8 m-2 p-4 flex justify-center items-center">
+                                <img class="object-contain" src="../assets/pay-bri.png" alt="">
+                            </div>
+                            <div class="border-2 rounded w-20 h-8 m-2 flex justify-center items-center">
+                                <img class="object-contain" src="../assets/pay-dana.png" alt="">
+                            </div>
+                            <div class="border-2 rounded w-20 h-8 m-2 p-4 flex justify-center items-center">
+                                <img class="object-contain" src="../assets/pay-gopay.png" alt="">
+                            </div>
+                            <div class="border-2 rounded w-20 h-8 m-2 p-4 flex justify-center items-center">
+                                <img class="object-contain" src="../assets/pay-gpay.png" alt="">
+                            </div>
+                            <div class="border-2 rounded w-20 h-8 m-2 p-4 flex justify-center items-center">
+                                <img class="object-contain" src="../assets/pay-ovo.png" alt="">
+                            </div>
+                            <div class="hidden border-2 rounded w-20 h-8 m-2 p-4 md:flex justify-center items-center">
+                                <img class="object-contain" src="../assets/pay-visa.png" alt="">
+                            </div>
+                            <div class="hidden border-2 rounded w-20 h-8 m-2 p-4 md:flex justify-center items-center">
+                                <img class="object-contain" src="../assets/paypal.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="text-center pt-5 pb-3">
+                            <span class="inline text-sm">Pay via cash.</span>
+                            <span class="inilne text-sm font-bold">See how it works.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex justify-between mt-8">
+                    <a class="border-2 py-1 px-10 rounded text-sm font-medium" href="">Previous Step</a>
+                    <a class="border-2 py-1 px-10 rounded text-sm font-medium" href="">Pay your order</a>
+                </div>
+            </div>
+        </div>
+        <section class="container w-full md:w-1/3 pt-8">
+            <div class="block md:drop-shadow-md mb-5 md:mb-0">
+                <a class="font-medium" href="">Personal Info</a>
+            </div>
+            <div class="bg-white rounded-lg md:mt-4 py-3 px-5 md:drop-shadow-md">
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="mt-5 md:mt-3">
+                        <label class="block pb-2" for="fullname">Full Name</label>
+                        <input class="w-full border-2 rounded-lg p-2 bg-gray-100" id="fullname" type="text" placeholder="Jonas Rodriguez" disabled>
+                    </div>
+                    <div class="mt-5">
+                        <label class="block pb-2" for="email">Email</label>
+                        <input class="w-full border-2 rounded-lg p-2 bg-gray-100" id="email" type="text" placeholder="rodriguez65@gmail.com" disabled>
+                    </div>
+                    <div class="mt-5">
+                        <label class="block pb-2" for="phone">Phone Number</label>
+                        <input class="w-full border-2 rounded-lg p-2 bg-gray-100" id="phone" type="text" placeholder="62813xxxxxx" disabled>
+                    </div>
+                    <div class="mt-5 mb-4 p-2 bg-yellow-200 rounded">
+                        <i class="inline fa-sharp fa-solid fa-triangle-exclamation"></i>
+                        <p class="inline text-sm">Fill your data correctly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container mx-auto px-10 lg:px-40 pt-7">
+        <div class="grid md:grid-cols-4 pr-5 md:pr-0">
+            <div class="pr-5">
+                <img src="../assets/Vector.png" alt="">
+                <p class="text-gray-500 text-sm">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="pl-0 md:pl-16 pt-5 md:pt-0 mt-5 md:mt-0">
+                <h1 class="font-medium text-sm">Explore</h1>
+                <a class="inline md:block pt-3 text-xs pr-10 md:pr-0" href="">Home</a>
+                <a class="inline md:block pt-2 text-xs" href="">List Movie</a>
+            </div>
+            <div class="mt-5 md:mt-0">
+                <h1 class="font-medium text-sm pt-5 md:pt-0">Our Sponsor</h1>
+                <div class="flex items-center md:block">
+                    <img class="inline md:block pt-3 mr-5 w-20" src="../assets/Vector2.png" alt="">
+                    <img class="inline md:block pt-3 mr-5 w-20" src="../assets/Vector4.png" alt="">
+                    <img class="inline md:block pt-3 mr-5 w-20" src="../assets/Vector3.png" alt="">
+                </div>
+            </div>
+            <div class="pt-5 md:pt-0 mt-5 md:mt-0">
+                <h1 class="font-medium text-sm">Follow us</h1>
+                <div class="flex gap-10 md:gap-0 md:justify-around md:block">
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-facebook-f inline"></i>
+                        <p class="hidden md:inline">Tickitz Cinema id</p>
+                    </a>
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-instagram inline"></i>
+                        <p class="hidden md:inline">tickitz.id</p>
+                    </a>
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-twitter inline"></i>
+                        <p class="hidden md:inline">tickitz.id</p>
+                    </a>
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-youtube inline"></i>
+                        <p class="hidden md:inline">Tickitz Cinema id</p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="text-center pt-16 pb-10">
+        <p class="text-gray-500">&copy; 2020 Tickitz. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
